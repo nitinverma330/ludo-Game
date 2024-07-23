@@ -1,0 +1,286 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+.border_red {
+    border: 3.1rem solid red;
+}
+
+.border_yellow {
+    border: 3.1rem solid yellow;
+}
+
+.border_blue {
+    border: 3.1rem solid blue;
+}
+
+.border_green {
+    border: 3.1rem solid green;
+}
+
+.yellow {
+    background: yellow;
+}
+.blue {
+    background: blue;
+}
+.red {
+    background: red;
+}
+.green {
+    background: green;
+}
+
+body {
+    background-color: #000000;
+}
+
+.outer {
+    height: 46.87rem;
+    width: 46.87rem;
+    border: 5px solid rgb(255, 0, 0);
+    margin: auto;
+    background: rgba(255, 255, 255);
+}
+
+.box_row {
+    height: 18.75rem;
+    width: 46.87rem;
+}
+
+
+.box {
+    height: 12.5rem;
+    width: 12.5rem;
+    float: left;
+}
+
+.yellow-piece {
+    width: 3.1rem;
+    height: 3.1rem;
+    border: 0.3rem solid yellow;
+    border-radius: 50%;
+    margin: 1.5rem;
+    box-sizing: border-box;
+    float: left;
+}
+
+.green-piece {
+    width: 3.1rem;
+    height: 3.1rem;
+    border: 0.3rem solid green;
+    border-radius: 50%;
+    margin: 1.5rem;
+    box-sizing: border-box;
+    float: left;
+}
+
+.red-piece {
+    width: 3.1rem;
+    height: 3.1rem;
+    border: 0.3rem solid red;
+    border-radius: 50%;
+    margin: 1.5rem;
+    box-sizing: border-box;
+    float: left;
+}
+
+.blue-piece {
+    width: 3.1rem;
+    height: 3.1rem;
+    border: 0.3rem solid blue;
+    border-radius: 50%;
+    margin: 1.5rem;
+    box-sizing: border-box;
+    float: left;
+}
+
+.center {
+    height: 18.7rem;
+    width: 9.3rem;
+    float: left;
+}
+
+.center_rows_cols {
+    height: 3.1rem;
+    width: 9.4rem;
+}
+
+.cell {
+    height: 3.1rem;
+    width: 3.1rem;
+    border: 1px solid rgb(0, 0, 0);
+    box-sizing: border-box;
+    float: left;
+    justify-content: center;
+}
+
+.middle_row {
+    height: 9.3rem;
+    width: 46.87rem;
+}
+
+.horizontal_center {
+    height: 9.3rem;
+    width: 18.7rem;
+    float: left;
+}
+
+.horizontal_center_row_cols {
+    height: 3.1rem;
+    width: 18.7rem;
+}
+
+.ludo_home {
+    height: 0rem;
+    width: 0rem;
+    border-top: 4.7rem solid blue;
+    border-right: 4.7rem solid red;
+    border-bottom: 4.6rem solid green;
+    border-left: 4.6rem solid yellow;
+    float: left;
+}
+
+.cellImg {
+    background-image: url(img.png);
+    background-size: cover;
+}
+
+.red_arrow {
+    background-image: url(red.png);
+    background-size: cover;
+}
+.blue_arrow {
+    background-image: url(blue.png);
+    background-size: cover;
+}
+.green_arrow {
+    background-image: url(green.png);
+    background-size: cover;
+}
+.yellow_arrow {
+    background-image: url(yellow.png);
+    background-size: cover;
+}
+.para {
+    font-size: 4rem;
+    text-align: center;
+}
+
+.player-pieces{
+    width: 100%;
+    height: 100%;
+    display: contents;
+    position:fixed;
+    background-color: transparent;
+}
+.player-piece{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 50%;
+    transition: all .2s;
+    z-index: 1;
+}
+.player-piece.highlight{
+    border: 5px dotted white;
+    cursor: pointer;
+    animation: spin 1s infinite linear;
+}
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(90deg) scale(1.2);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+[player-id="P1"].player-piece {
+    background-color: blue;
+} 
+[player-id="P2"].player-piece {
+    background-color: green;
+}
+
+.player-base{
+    height: 12.6rem;
+    width: 12.5rem;
+    border: 3rem solid;
+    position: absolute;
+}
+
+.player-bases [player-id="P1"].player-base{
+    margin-top: 0px;
+    margin-left: 28rem;
+    border-color: rgb(0, 0, 255);
+}
+.player-bases [player-id="P2"].player-base{
+    margin-top: 28rem;
+    margin-bottom: 1px;
+    border-color: green;
+}
+
+.player-base.highlight {
+    animation: box_blinking 1s infinite ease-in-out;
+}
+@keyframes box_blinking{
+    50%{
+        border-color: rgb(142, 222, 244);
+    }
+}
+
+#dice-btn{
+    height: 2.9rem;
+    width: 2.9rem;
+    margin-top: 0.05rem;
+    background-color: chartreuse;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+}
+#reset-btn{
+    height: 3rem;
+    width: 6rem;
+    margin-left: 16.5rem;
+    margin-top: 0.05rem;
+    background-color: chartreuse;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+}
+.dice-value{
+    height: 2.9rem;
+    width: 2.9rem;
+    margin-left: 9.3rem;
+    margin-top: 0.05rem;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: #000000;
+}
+.button-section{
+    display: flex;
+}
+.btn:disabled{
+    opacity: 0.5;
+}
+.active-player{
+    color: hsl(61, 100%, 50%);
+    height: 100px;
+    width: 100pxs;
+    margin-left: 1rem;
+}
+.footer{
+    margin-left: 27.5%;
+    height: 46.87rem;
+    width: 47.5rem;
+    /* background-color: aqua; */
+}

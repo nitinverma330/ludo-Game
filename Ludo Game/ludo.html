@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUDO King</title>
+    <link rel="stylesheet" href="ludo.css">
+</head>
+
+<body>
+    <div class="outer">
+        <!-- Two Players Pieces P1 & P2 where P1 Is Blue And P2 Is Green Color -->
+        <div class="player-pieces">
+            <div class="player-piece" player-id="P1" piece="0"></div>
+            <div class="player-piece" player-id="P1" piece="1"></div>
+            <div class="player-piece" player-id="P1" piece="2"></div>
+            <div class="player-piece" player-id="P1" piece="3"></div>
+
+            <div class="player-piece" player-id="P2" piece="0"></div>
+            <div class="player-piece" player-id="P2" piece="1"></div>
+            <div class="player-piece" player-id="P2" piece="2"></div>
+            <div class="player-piece" player-id="P2" piece="3"></div>
+        </div>
+        <!-- Here I have created the structure of ay ludo game. -->
+        <div class="player-bases">
+            <div class="player-base" player-id="P1"></div>
+            <div class="player-base" player-id="P2"></div>
+        </div>
+        <div class="box_row">
+            <div class="box border_yellow">
+                <div class="yellow-piece"></div>
+                <div class="yellow-piece"></div>
+                <div class="yellow-piece"></div>
+                <div class="yellow-piece"></div>
+            </div>
+            <div class="center">
+                <div class="center_rows_cols">
+                    <div class="cell"></div>
+                    <div class="cell blue_arrow"></div>
+                    <div class="cell"></div>
+                </div>
+                <div class="center_rows_cols">
+                    <div class="cell"></div>
+                    <div class="cell blue"></div>
+                    <div class="cell blue">
+                        <p class="para">*</p>
+                    </div>
+                </div>
+                <div class="center_rows_cols">
+                    <div class="cell cellImg blue"></div>
+                    <div class="cell blue"></div>
+                    <div class="cell"></div>
+                </div>
+                <div class="center_rows_cols">
+                    <div class="cell"></div>
+                    <div class="cell blue"></div>
+                    <div class="cell"></div>
+                </div>
+                <div class="center_rows_cols">
+                    <div class="cell"></div>
+                    <div class="cell blue"></div>
+                    <div class="cell"></div>
+                </div>
+                <div class="center_rows_cols">
+                    <div class="cell"></div>
+                    <div class="cell blue"></div>
+                    <div class="cell"></div>
+                </div>
+            </div>
+            <div class="box_row">
+                <div class="box border_blue">
+                    <div class="blue-piece"></div>
+                    <div class="blue-piece"></div>
+                    <div class="blue-piece"></div>
+                    <div class="blue-piece"></div>
+                </div>
+            </div>
+        </div>
+        <div class="middle_row">
+            <div class="horizontal_center">
+                <div class="horizontal_center_row_cols">
+                    <div class="cell"></div>
+                    <div class="cell yellow">
+                        <p class="para">*</p>
+                    </div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell yellow_arrow"></div>
+                    <div class="cell yellow"></div>
+                    <div class="cell yellow"></div>
+                    <div class="cell yellow"></div>
+                    <div class="cell yellow"></div>
+                    <div class="cell yellow"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell yellow cellImg"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                </div>
+            </div>
+            <div class="ludo_home"></div>
+            <div class="horizontal_center">
+                <div class="horizontal_center_row_cols">
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell red cellImg"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell red"></div>
+                    <div class="cell red"></div>
+                    <div class="cell red"></div>
+                    <div class="cell red"></div>
+                    <div class="cell red"></div>
+                    <div class="cell red_arrow"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell red">
+                        <p class="para">*</p>
+                    </div>
+                    <div class="cell"></div>
+                </div>
+            </div>
+        </div>
+        <div class="box border_green">
+            <div class="green-piece"></div>
+            <div class="green-piece"></div>
+            <div class="green-piece"></div>
+            <div class="green-piece"></div>
+        </div>
+
+        <div class="center">
+            <div class="center_rows_cols">
+                <div class="cell"></div>
+                <div class="cell green"></div>
+                <div class="cell"></div>
+            </div>
+            <div class="center_rows_cols">
+                <div class="cell"></div>
+                <div class="cell green"></div>
+                <div class="cell"></div>
+            </div>
+            <div class="center_rows_cols">
+                <div class="cell"></div>
+                <div class="cell green"></div>
+                <div class="cell"></div>
+            </div>
+            <div class="center_rows_cols">
+                <div class="cell"></div>
+                <div class="cell green"></div>
+                <div class="cell green cellImg"></div>
+            </div>
+            <div class="center_rows_cols">
+                <div class="cell green">
+                    <p class="para">*</p>
+                </div>
+                <div class="cell green"></div>
+                <div class="cell"></div>
+            </div>
+            <div class="center_rows_cols">
+                <div class="cell"></div>
+                <div class="cell green_arrow"></div>
+                <div class="cell"></div>
+            </div>
+        </div>
+        <div class="box_row">
+            <div class="box border_red">
+                <div class="red-piece"></div>
+                <div class="red-piece"></div>
+                <div class="red-piece"></div>
+                <div class="red-piece"></div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- this is a button section -->
+<div class="footer">
+    <div class="button-section">
+        <button id="dice-btn" class="btn btn-dice">Dice</button>
+        <h3 class="active-player">Active player: <span></span> </h3>
+        <div class="dice-value"></div>
+        <button id="reset-btn" class="btn btn-reset">Reset</button>
+    </div>
+</div>
+    <!-- JavaScript File -->
+    <script type="module" src="ludo.js"></script>
+</body>
+
+</html>
